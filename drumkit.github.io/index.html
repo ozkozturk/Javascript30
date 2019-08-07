@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Drum Kit</title>
+</head>
+<body>
+    
+
+    <div class="keys">
+        <div class="top">
+            <div class="key" data-key="65">
+                <kbd>A</kbd>
+                <span class="sound">Bass Drum</span>
+            </div>
+            <div class="key" data-key="83">
+                <kbd>S</kbd>
+                <span class="sound">Clap</span>
+            </div>
+            <div class="key" data-key="68">
+                <kbd>D</kbd>
+                <span class="sound">Conga 1</span>
+            </div>
+            <div class="key" data-key="70">
+                <kbd>F</kbd>
+                <span class="sound">Conga 2</span>
+            </div>
+            <div class="key" data-key="71">
+                <kbd>G</kbd>
+                <span class="sound">Cymbal 1</span>
+            </div>
+            <div class="key" data-key="72">
+                <kbd>H</kbd>
+                <span class="sound">Cymbal 2</span>
+            </div>
+            <div class="key" data-key="74">
+                <kbd>J</kbd>
+                <span class="sound">Cymbal 3</span>
+            </div>
+            <div class="key" data-key="75">
+                <kbd>K</kbd>
+                <span class="sound">Cymbal 4</span>
+            </div>
+            <div class="key" data-key="76">
+                <kbd>L</kbd>
+                <span class="sound">Hi-Hat</span>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="key" data-key="67">
+                <kbd>C</kbd>
+                <span class="sound">Hi-Hat Open</span>
+            </div>
+            <div class="key" data-key="86">
+                <kbd>V</kbd>
+                <span class="sound">Snare Drum</span>
+            </div>
+            <div class="key" data-key="66">
+                <kbd>B</kbd>
+                <span class="sound">Stick</span>
+            </div>
+            <div class="key" data-key="78">
+                <kbd>N</kbd>
+                <span class="sound">TAMB</span>
+            </div>
+            <div class="key" data-key="77">
+                <kbd>M</kbd>
+                <span class="sound">TThi2</span>
+            </div>
+        </div>
+        <div class="shift">
+            <div class="key" data-key="16">
+                <kbd>SHIFT</kbd>
+                <span class="sound">TTlow</span>
+            </div>
+        </div>
+        <div class="space">
+            <div class="key" data-key="32">
+                <kbd>SPACE</kbd>
+                <span class="sound">TThi</span>
+            </div>
+        </div>
+    </div>
+
+
+    <audio data-key="65" src="./Electronic Jazz Kit/bdBrushkit.wav"></audio>
+    <audio data-key="83" src="./Electronic Jazz Kit/CLAP1.wav"></audio>
+    <audio data-key="68" src="./Electronic Jazz Kit/CONGA1.wav"></audio>
+    <audio data-key="70" src="./Electronic Jazz Kit/CONGA2.wav"></audio>
+    <audio data-key="71" src="./Electronic Jazz Kit/Cy1Brushkit.wav"></audio>
+    <audio data-key="72" src="./Electronic Jazz Kit/Cy2Brushkit.wav"></audio>
+    <audio data-key="74" src="./Electronic Jazz Kit/CYMBAL03.wav"></audio>
+    <audio data-key="75" src="./Electronic Jazz Kit/CYMBAL08.wav"></audio>
+    <audio data-key="76" src="./Electronic Jazz Kit/HIHAT01.wav"></audio>
+    <audio data-key="67" src="./Electronic Jazz Kit/HHosBrushkit.wav"></audio>
+    <audio data-key="86" src="./Electronic Jazz Kit/SD6Brushkit.wav"></audio>
+    <audio data-key="66" src="./Electronic Jazz Kit/STICK.wav"></audio> 
+    <audio data-key="78" src="./Electronic Jazz Kit/TAMB.wav"></audio>
+    <audio data-key="77" src="./Electronic Jazz Kit/TThi2Brushkit.wav"></audio>
+    <audio data-key="32" src="./Electronic Jazz Kit/TThiBrushkit.wav"></audio>
+    <audio data-key="16" src="./Electronic Jazz Kit/TTloBrushkit.wav"></audio>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
