@@ -18,4 +18,4 @@ we used <em>clasList</em> property to add and remove the animation in <em>".play
 To decide what to do after animation, we needed to use this event in our <em>"keys.forEach"</em> loop.
 
 
-Actually at every stage I stoped the video and search some keyword or usage. I benefit from this project so much.
+Actually at every stage I stoped the video and searched some keyword or usage. I benefit from this project so much.
