@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dev Tools Domination</title>
+</head>
+<body>
+        <p onClick="makeGreen()">×BREAK×DOWN×</p>
+
+
+
+
+
+    <script>
+        const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }];
+        function makeGreen() {
+        const p = document.querySelector('p');
+        p.style.color = '#BADA55';
+        p.style.fontSize = '50px';
+        }
+        // Regular
+        console.log("hello");
+
+        // Interpolated
+        console.log("Hello I'm a %s string!", "\u{1F600}");
+
+        // Styled
+        console.log("%c I'm a some great text", "font-size: 40px; background: red; text-shadow: 10px 10px 0 yellow;")
+
+        // warning!
+        console.warn("oh noooo");
+
+        // Error :|
+        console.error("Shitttt!");
+
+        // Info
+        console.info("I know something but I won't say you lol");
+
+        // Testing
+        const paragraph = document.querySelector("p");
+        console.assert(paragraph.classList.contains("nooo") , 'This is wrong. "p" has no class "nooo"');
+
+        // clearing
+        // console.clear(); --> it clears whole console
+
+        // Viewing DOM Elements
+        console.log(paragraph);
+        console.dir(paragraph); // it allows us to take a look at its properties, classList and so on
+
+        console.clear();
+
+        // Grouping together
+        dogs.forEach(dog => {
+            console.groupCollapsed(`${dog.name}`);
+            //console.group(`${dog.name}`);
+            console.log(`This is ${dog.name}`);
+            console.log(`${dog.name} is ${dog.age} years old.`);
+            console.log(`${dog.name} is ${dog.age * 7} dog yeras old.`);
+            console.groupEnd(`${dog.name}`);
+        })
+
+        // counting --> will count how many times you use a specific word
+
+        console.count("goal");
+        console.count("goal");
+        console.count("goal");
+        console.count("goal");
+        console.count("penalty");
+        console.count("goal");
+        console.count("penalty");
+        console.count("goal");
+
+
+        // timing --> how long time it takes
+
+        console.time("fetching data");
+        fetch("https://api.github.com/users/wesbos")
+            .then(data => data.json())
+            .then(data => {
+                console.timeEnd("fetching data");
+                console.log(data);
+            })
+
+        console.table(dogs);
+
+    </script>
+</body>
+</html>
